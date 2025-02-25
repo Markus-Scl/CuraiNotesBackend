@@ -8,7 +8,7 @@ const dataSource = new DataSource({
     password: process.env.DB_PASSWORD || "1234",
     database: process.env.DB_NAME || "curaiNotes",
     synchronize: true, // Set to false in production
-    logging: true,
+    logging: false,
     entities: ["src/entities/*.ts"],
     subscribers: [],
     migrations: [],
